@@ -1,28 +1,33 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Poppins";
+  font-family: "Roboto";
   font-weight: 300;
-  src: url(../fonts/AnyConv.com__Poppins-Light.woff) format(woff);
+  src: url(../fonts/Roboto-Light.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "Roboto";
   font-weight: 400;
-  src: url(../fonts/AnyConv.com__Poppins-Regular.woff) format(woff);
+  src: url(../fonts/Roboto-Regular.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "Roboto";
   font-weight: 500;
-  src: url(../fonts/AnyConv.com__Poppins-Medium.woff) format(woff);
+  src: url(../fonts/Roboto-Medium.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
-  font-weight: 600;
-  src: url(../fonts/AnyConv.com__Poppins-SemiBold.woff) format(woff);
-}
-@font-face {
-  font-family: "Poppins";
+  font-family: "Roboto";
   font-weight: 700;
-  src: url(../fonts/AnyConv.com__Poppins-Bold.woff) format(woff);
+  src: url(../fonts/Roboto-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  src: url(../fonts/LibreBaskerville-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  src: url(../fonts/LibreBaskerville-Bold.woff) format("woff");
 }
 /* reset */
 body,
@@ -303,25 +308,59 @@ legend {
   height: 300px;
 }
 
+.container {
+  padding: 0 4%;
+}
+
 #header {
-  border-bottom: 1px solid #000;
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#header #logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #header .inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   height: 70px;
 }
-#header .lst-util {
-  display: flex;
+#header .btn-g {
+  height: 40px;
+  width: 70px;
+}
+#header .btn-g::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 free";
 }
 #header .lst-util .btn-search::before {
-  content: "\f3eb";
-  font-family: "Line Awesome Brands";
+  content: "\f002";
+  font-family: "Font Awesome 6 free";
   font-weight: 900;
+  padding: 5px;
+  color: #fff;
 }
-#header .lst-util .btn-hambuger::before {
+#header .lst-util2 .btn-ham::before {
   content: "\f007";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
+  font-family: "Font Awesome 6 free";
+  font-weight: 500;
+  padding: 5px;
+  color: #fff;
+}
+
+body {
+  background: url();
+}
+
+#main {
+  padding-top: 70px;
+}
+#main img {
+  width: 100%;
 }/*# sourceMappingURL=comm.css.map */
